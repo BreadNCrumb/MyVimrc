@@ -14,3 +14,5 @@ set autoindent
 set syntax=on
 
 set tw=79
+
+set guifont=Monospace\ 12
