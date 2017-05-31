@@ -15,6 +15,7 @@ set softtabstop=4
 set autoindent
 set syntax=on
 
+"let me know if my character exceed 80 lines
 set tw=79
 
 set guifont=Monospace\ 12
