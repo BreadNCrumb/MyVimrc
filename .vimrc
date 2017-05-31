@@ -1,6 +1,8 @@
 au BufNewFile,BufRead *.s,*.S set filetype=arm " arm = armv6/7
 set nu
 set smartindent
+"wrap text on minimize screen"
+set wrap
 
 colorscheme desert
 
