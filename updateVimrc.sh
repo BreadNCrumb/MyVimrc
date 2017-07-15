@@ -1,7 +1,8 @@
 #!/bin/bash
-echo "[c] to copy the configuration file to this system"
-echo "[u] to update this vimrc before pushing to Github"
-echo "[d] to view the differences between this vimrc and the system's vimrc"
+echo "[c] to copy this vimrc to the system's vimrc"
+echo "[u] to copy the system's vimrc to this vimrc"
+echo "[d] to compare the differences between the two vimrc"
+echo "[e] to exit"
 read -p "Choose your option: " RESP
  
 if [ "$RESP" = "c" ]; then
@@ -13,6 +14,8 @@ elif [ "$RESP" = "u" ]; then
 elif [ "$RESP" = "d" ]; then
     diff .vimrc ~/.vimrc
     echo "Repo's vimrc(left) vs this system's vimrc (right)"
+elif [ "$RESP" = "e" ]; then
+    exit 
 else
 	echo "Wrong argument. Please try again"
 fi
