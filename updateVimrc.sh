@@ -3,6 +3,8 @@ echo "[c] to copy this vimrc to the system's vimrc"
 echo "[u] to copy the system's vimrc to this vimrc"
 echo "[d] to compare the differences between the two vimrc"
 echo "[e] to exit"
+while :
+do
 read -p "Choose your option: " RESP
  
 if [ "$RESP" = "c" ]; then
@@ -19,3 +21,4 @@ elif [ "$RESP" = "e" ]; then
 else
 	echo "Wrong argument. Please try again"
 fi
+done
